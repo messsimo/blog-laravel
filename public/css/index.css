@@ -1,0 +1,125 @@
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+/* Универсальные стили */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+/* Стили для шапки сайта */
+header {
+    background-color: #0095B6;
+    color: white;
+}
+
+header h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 42px;
+    padding: 30px 0 30px 100px;
+}
+
+header .nav {
+    float: right;
+    /* padding: 30px 100px 30px 0; */
+    padding-top: 55px;
+    padding-right: 100px;
+}
+
+header .nav ul {
+    display: flex;
+}
+
+header .nav ul li {
+    margin-right: 50px;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+}
+
+header .nav ul li:hover {
+    color:rgb(196, 196, 196);
+}
+
+header .nav ul a {
+    color: white;
+    font-size: 20px;
+}
+
+/* Стили для формы */
+.form {
+    padding-top: 70px;
+    padding-left: 100px;
+}
+
+.form h1 {
+    font-style: italic;
+    padding-bottom: 25px;
+}
+
+.form form label {
+    color: rgb(157, 157, 157);
+    font-size: 16px;
+}
+
+.form form input,
+.form form textarea {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    height: 40px;
+    width: 40%;
+    border: 1px solid #aeaeae;
+    border-radius: 5px;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.form form textarea {
+    height: 120px;
+    padding-top: 10px;
+}
+
+.form form .alert-danger {
+    background-color: rgba(255, 0, 25, 0.8);
+    width: 38.5%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.form form .alert-danger p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.form form .alert-danger p:last-child {
+    padding-bottom: 0px;
+}
+
+.form form button {
+    width: 41.2%;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.form form button:hover {
+    background-color: rgb(0, 94, 0);
+}
