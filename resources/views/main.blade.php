@@ -18,11 +18,19 @@
         <label for="note">Сообщение</label><br>
         <textarea name="note" id="note" placeholder="Сегодня я.."></textarea><br>
 
+        <!-- Отображение ошибки -->
         @if ($errors->any())
             <div class="alert-danger">
                 @foreach ($errors->all() as $el)
                     <p>{{ $el }}</p>
                 @endforeach
+            </div>
+        @endif
+
+        <!-- Отображение успешного действия -->
+        @if (session("success"))
+            <div class="alert-success">
+                <span>{{ session('success') }}</span>
             </div>
         @endif
 

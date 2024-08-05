@@ -110,6 +110,19 @@ header .nav ul a {
     padding-bottom: 0px;
 }
 
+.form form .alert-success {
+    background-color: rgb(8, 164, 8);
+    width: 39.6%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.form form .alert-success span {
+    font-size: 14px;
+    color: white;
+}
+
 .form form button {
     width: 41.2%;
     height: 40px;
