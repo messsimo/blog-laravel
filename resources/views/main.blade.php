@@ -37,4 +37,22 @@
         <button type="submit">Выложить заметку</button>
     </form> 
 </div>
+
+<div class="container-notes">
+    <h1>Заметки</h1>
+
+    <div class="container-blocks">
+        <div class="block">
+            <div class="controllers">
+                <a href="" class="delete">Удалить</a>
+                <a href="">Редактировать</a>
+            </div>
+
+            <h4>Тема заметки</h4>
+            <span>Автор</span>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio in eaque, assumenda animi totam optio aperiam nulla ea delectus aut porro dolorum cum quae officiis eligendi autem incidunt consectetur sint.</p>
+        </div>
+    </div>
+</div>
 @endsection

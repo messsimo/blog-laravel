@@ -136,3 +136,69 @@ header .nav ul a {
 .form form button:hover {
     background-color: rgb(0, 94, 0);
 }
+
+/* Стили для секции с заметками */
+.container-notes {
+    padding: 100px;
+}
+
+.container-notes h1 {
+    font-size: 42px;
+    font-style: italic;
+    padding-bottom: 50px;
+}
+
+.container-blocks {
+    /* display: grid;
+    place-items: center; */
+}
+
+.container-notes .container-blocks .block {
+    background-color: #bcbcbc;
+    width: 80%;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.container-notes .container-blocks .block .controllers {
+    float: right;
+}
+
+.container-notes .container-blocks .block .controllers a {
+    margin-right: 10px;
+    color: white;
+    font-size: 12px;
+    background-color: green;
+    padding: 3px 5px;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+}
+
+.container-notes .container-blocks .block .controllers a:hover {
+    background-color: rgb(0, 94, 0);
+    color: rgb(223, 223, 223);
+}
+
+.container-notes .container-blocks .block .controllers .delete {
+    background-color: red;
+}
+
+.container-notes .container-blocks .block .controllers .delete:hover {
+    background-color: rgb(209, 4, 4);
+}
+
+.container-notes .container-blocks .block h4 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.container-notes .container-blocks .block span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.container-notes .container-blocks .block p {
+    padding-top: 15px;
+    font-size: 18px;
+}
