@@ -21,7 +21,17 @@ class noteController extends Controller {
         // Установка сообщения
         Session::flash("success", "Заметка успешно добавлена!");
         // Вывод успешной сессии
-        return redirect()->route("main")->with("success", "Заметка успешно добавлена!");
+        return redirect()->route("view_note")->with("success", "Заметка успешно добавлена!");
     }
 
+    // Функция вывода всех блогов
+    public function viewNote() {
+        // Получение всех данных из таблицы
+        $notes = notes::all();
+
+        // Передача ключа с информацией в шаблон
+        return view("main", ["notes" => $notes]);
+    }
 }
+
+

@@ -4,7 +4,7 @@
 <!-- Секция домашиния страницы -->
 @section("main")
 <div class="form">
-    <h1>Оставить заметку</h1>
+    <h1>Добавить новый блог</h1>
     <form action="{{ route('add_note') }}" method="post">
         <!-- Ключ безопасности -->
         @csrf 
@@ -39,20 +39,23 @@
 </div>
 
 <div class="container-notes">
-    <h1>Заметки</h1>
+    <h1>Блоги</h1>
 
     <div class="container-blocks">
+        <!-- Вывод информации из таблицы базы данных -->
+        @foreach ($notes as $el)
         <div class="block">
             <div class="controllers">
                 <a href="" class="delete">Удалить</a>
                 <a href="">Редактировать</a>
             </div>
 
-            <h4>Тема заметки</h4>
-            <span>Автор</span>
+            <h4>{{ $el->header }}</h4>
+            <span>{{ $el->name }}</span>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio in eaque, assumenda animi totam optio aperiam nulla ea delectus aut porro dolorum cum quae officiis eligendi autem incidunt consectetur sint.</p>
+            <p>{{ $el->note }}</p>
         </div>
+        @endforeach
     </div>
 </div>
 @endsection
