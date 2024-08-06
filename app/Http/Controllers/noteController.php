@@ -52,11 +52,24 @@ class noteController extends Controller {
         $note->save();
 
         // Установка значения в сессию
-        Session::put("ket", "success_edit");
+        Session::put("ket", "edit");
         // Установка сообщения
-        Session::flash("success_edit", "Заметка успешно обновлена!");
+        Session::flash("edit", "Заметка успешно обновлена!");
 
-        return redirect()->route("view_note")->with("success_edit", "Заметка #$id успешно обновлена!");
+        return redirect()->route("view_note")->with("edit", "Заметка #$id успешно обновлена!");
+    }
+
+    // Функция для удаления блога
+    public function deleteNote($id) {
+        // Удаление блога
+        notes::find($id)->delete();
+
+        // Установка значения в сессию
+        Session::put("ket", "edit");
+        // Установка сообщения
+        Session::flash("edit", "Заметка успешно удалена!");
+        
+        return redirect()->route("view_note")->with("edit", "Заметка #$id успешно удалена!");
     }
  }
 

@@ -43,9 +43,9 @@
 
     <div class="container-blocks">
         <!-- Вывод оповещения о редактрование блога -->
-        @if (session('success_edit'))
+        @if (session('edit'))
             <div class="alert-success blog-allert-success">
-                <span>{{ session('success_edit') }}</span>
+                <span>{{ session('edit') }}</span>
             </div>
         @endif
 
@@ -53,7 +53,7 @@
         @foreach ($notes as $el)
         <div class="block">
             <div class="controllers">
-                <a href="" class="delete">Удалить</a>
+                <a href="{{ route('delete_note', $el->id) }}" class="delete">Удалить</a>
                 <a href="{{ route('edit_noteForm', $el->id) }}">Редактировать</a>
             </div>
 

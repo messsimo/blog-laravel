@@ -12,4 +12,6 @@ Route::post("/add_note", [noteController::class, "addNote"])->name("add_note");
 // URL редактирование заметки
 Route::get("/edit_note/{id}", [noteController::class, "editNoteform"])->name("edit_noteForm");
 // URL для обработки формы редактирования
-Route::post("/edit_note/{id}", [noteController::class, "editNote"])->name("edit_noteForm");
+Route::post("/edit_note/{id}", [noteController::class, "editNote"])->name("edit_note");
+// URL для удаления блога
+Route::get("/delete/{id}", [noteController::class, "deleteNote"])->name("delete_note");
