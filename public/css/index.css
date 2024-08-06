@@ -79,7 +79,7 @@ header .nav ul a {
     margin-bottom: 15px;
     padding-left: 15px;
     height: 40px;
-    width: 40%;
+    min-width: 40%;
     border: 1px solid #aeaeae;
     border-radius: 5px;
     outline: none;
@@ -94,7 +94,7 @@ header .nav ul a {
 
 .form form .alert-danger {
     background-color: rgba(255, 0, 25, 0.8);
-    width: 38.5%;
+    min-width: 38.5%;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -110,21 +110,26 @@ header .nav ul a {
     padding-bottom: 0px;
 }
 
-.form form .alert-success {
+.alert-success {
     background-color: rgb(8, 164, 8);
-    width: 39.6%;
+    min-width: 39.6%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
-.form form .alert-success span {
+.alert-success span {
     font-size: 14px;
     color: white;
 }
 
+.blog-allert-success {
+    min-width: 50%;
+    max-width: 50%;
+}
+
 .form form button {
-    width: 41.2%;
+    min-width: 41.2%;
     height: 40px;
     background-color: green;
     color: white;
@@ -148,17 +153,12 @@ header .nav ul a {
     padding-bottom: 50px;
 }
 
-.container-blocks {
-    /* display: grid;
-    place-items: center; */
-}
-
 .container-notes .container-blocks .block {
     background-color: #bcbcbc;
     width: 80%;
     padding: 30px;
     border-radius: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .container-notes .container-blocks .block .controllers {
@@ -186,6 +186,11 @@ header .nav ul a {
 
 .container-notes .container-blocks .block .controllers .delete:hover {
     background-color: rgb(209, 4, 4);
+}
+
+.container-notes .container-blocks .block .id {
+    font-size: 14px;
+    margin-top: -5px;
 }
 
 .container-notes .container-blocks .block h4 {

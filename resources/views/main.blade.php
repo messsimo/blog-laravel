@@ -42,16 +42,24 @@
     <h1>Блоги</h1>
 
     <div class="container-blocks">
+        <!-- Вывод оповещения о редактрование блога -->
+        @if (session('success_edit'))
+            <div class="alert-success blog-allert-success">
+                <span>{{ session('success_edit') }}</span>
+            </div>
+        @endif
+
         <!-- Вывод информации из таблицы базы данных -->
         @foreach ($notes as $el)
         <div class="block">
             <div class="controllers">
                 <a href="" class="delete">Удалить</a>
-                <a href="">Редактировать</a>
+                <a href="{{ route('edit_noteForm', $el->id) }}">Редактировать</a>
             </div>
 
             <h4>{{ $el->header }}</h4>
             <span>{{ $el->name }}</span>
+            <span class="id">ID: {{ $el->id }}</span>
 
             <p>{{ $el->note }}</p>
         </div>

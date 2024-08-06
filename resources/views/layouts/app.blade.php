@@ -11,6 +11,7 @@
     @include("blocks.header")
     <!-- Подключение домашней страницы -->
     @yield("main")
-
+    <!-- Подключение формы редактирования -->
+    @yield("edit_note")
 </body>
 </html>
