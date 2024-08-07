@@ -20,7 +20,7 @@
 
         <!-- Отображение ошибки -->
         @if ($errors->any())
-            <div class="alert-danger">
+            <div class="alert-danger form-allert">
                 @foreach ($errors->all() as $el)
                     <p>{{ $el }}</p>
                 @endforeach
@@ -29,7 +29,7 @@
 
         <!-- Отображение успешного действия -->
         @if (session("success"))
-            <div class="alert-success">
+            <div class="alert-success form-allert">
                 <span>{{ session('success') }}</span>
             </div>
         @endif
@@ -64,6 +64,10 @@
             <p>{{ $el->note }}</p>
         </div>
         @endforeach
+    </div>
+
+    <div class="pagination">
+        {{ $notes->links('vendor.pagination.custom') }}
     </div>
 </div>
 @endsection

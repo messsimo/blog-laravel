@@ -18,6 +18,10 @@ button {
     border: none;
 }
 
+img {
+    width: 20%;
+}
+
 /* Стили для шапки сайта */
 header {
     background-color: #0095B6;
@@ -206,4 +210,39 @@ header .nav ul a {
 .container-notes .container-blocks .block p {
     padding-top: 15px;
     font-size: 18px;
+}
+
+.form-allert {
+    max-width: 39.8%;
+    min-width: 39.8%;
+}
+
+/* Стили для пагинации */
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination ul {
+    list-style: none;
+}
+
+.page-item.active .page-link {
+    background-color: #0095B6;
+    border-color: #0095B6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.page-link {
+    color: #0095B6;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.page-item.active .page-link:hover {
+    background-color: #017e9a;
 }

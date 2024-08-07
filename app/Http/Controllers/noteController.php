@@ -26,8 +26,8 @@ class noteController extends Controller {
 
     // Функция вывода всех блогов
     public function viewNote() {
-        // Получение всех данных из таблицы
-        $notes = notes::all();
+        // Получение всех данных из таблицы c определнным кол-во на страницу
+        $notes = notes::paginate(5);
 
         // Передача ключа с информацией в шаблон
         return view("main", ["notes" => $notes]);
