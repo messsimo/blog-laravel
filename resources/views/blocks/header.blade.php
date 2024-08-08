@@ -4,7 +4,7 @@
         <div class="nav">
             <ul>
                 <a href="{{ route('view_note') }}"><li>Главная</li></a>
-                <a href=""><li>Все отзывы</li></a>
+                <a href="#blogs"><li>Все отзывы</li></a>
             </ul>
         </div>
 

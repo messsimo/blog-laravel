@@ -39,7 +39,7 @@
 </div>
 
 <div class="container-notes">
-    <h1>Блоги</h1>
+    <h1 id="blogs">Блоги</h1>
 
     <div class="container-blocks">
         <!-- Вывод оповещения о редактрование блога -->
